@@ -9,6 +9,10 @@ var SHIVEPOOL = 25000;
 const BRIDGE_USER = "kswap";
 let ssc;
 
+let COINGECKO_HIVE_URL = "https://api.coingecko.com/api/v3/simple/price?ids=hive&vs_currencies=usd";
+let COINGECKO_HBD_URL = "https://api.coingecko.com/api/v3/simple/price?ids=hive_dollar&vs_currencies=usd";
+
+
 $(window).bind("load", function () {
 
     var rpc_nodes = [
@@ -1805,3 +1809,22 @@ async function getSelectedEngEndpoint() {
       return "https://engine.rishipanthee.com";
     }
 };
+
+const getMarket = async () => {
+    try
+    {
+        var hivedata = await axios.get(COINGECKO_HIVE_URL);              
+        let hivePrice = parseFloat(hivedata.data.hive.usd);
+        var hbddata = await axios.get(COINGECKO_HBD_URL);                
+        let hbdPrice = parseFloat(hbddata.data.hive_dollar.usd);
+
+        $("#hiveusdprice").text("$"+hivePrice.toFixed(3));        
+        $("#hbdusdprice").text("$"+hbdPrice.toFixed(3)); 
+    }
+    catch (error)
+    {
+        console.log("Error at getMarket() : ", error);
+    }  
+};
+
+getMarket();

@@ -320,6 +320,15 @@ label {
   transition: all 0.2s ease-in-out;
 }
 
+.price-info {
+  color: #838383;
+}
+
+.price-info:hover {
+  color: #E33C3A;
+  transition: all 0.2s ease-in-out;
+}
+
 .fee-font-color {
     color: #000000 !important;
 }
@@ -735,5 +744,3 @@ tr:hover .node-url {
     color: #ffffff;
     transition: fill 0.3s ease;
 }
-  
-  
