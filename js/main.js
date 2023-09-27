@@ -1315,7 +1315,7 @@ $(window).bind("load", function () {
             await refresh();
             await updateBalance();
             //updateSwap();
-            getExtBridge();
+            //getExtBridge();
             historyReader();
             console.log("");
             console.warn("Refresh ended");
@@ -1538,7 +1538,7 @@ $(window).bind("load", function () {
     }
 
     refresh();
-    getExtBridge();
+    //getExtBridge();
     changeMinOutput();
 });
 

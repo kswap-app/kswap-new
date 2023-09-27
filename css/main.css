@@ -3,7 +3,7 @@
 html, body {
     font-family: 'Segoe UI', 'Ubuntu', 'Helvetica Neue', 'Oxygen', 'Roboto', 'Open Sans', 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    background-color: #f0f0f0;
+    background-color: #e4e4e4;
     color: #000000;
     font-size: 1rem;
     padding-bottom: 30px; /* adjust the value as needed */
@@ -44,7 +44,7 @@ img {
 }
 
 .bg {
-  background-color: #ffffff;
+  background-color: #eeeeee;
   border-color: #8f8f8f;
 }
 
@@ -55,7 +55,7 @@ img {
 }
 
 .input-color {
-  background-color: #f0f0f0 !important;
+  background-color: #fafafa !important;
 }
 
 .btn-sm {
@@ -126,11 +126,11 @@ a {
 }
 
 .htable tr:nth-child(even) {
-  background-color: #b9b9b9;
+  background-color: #d6d6d6;
 }
 
 .htable tr:hover {
-  background-color: #b9b9b9;
+  background-color: #d6d6d6;
 }
 
 @media (max-width: 1120px) { 
@@ -165,7 +165,7 @@ span.fee {
 }
 
 span.details {
-  color: #8f8f8f;
+  color: #838383;
 }
 
 span.token {
@@ -370,11 +370,11 @@ label {
 }
 
 .reverse-color {
-  fill: #b9b9b9;
+  fill: #afafaf;
 }
 
 .reverse-color:hover path {
-    fill: #8f8f8f;
+    fill: #818181;
     transition: all 0.2s ease-in-out;
 }
 
